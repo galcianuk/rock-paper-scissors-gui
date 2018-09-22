@@ -4,10 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Rock, Paper, Scissors</title>
 </head>
 <body>
-    
+    <div id="Scores">
+        <span id="PlayerName" class="PlayerNames"></span>
+        <span id="PlayerScore"></span>
+        <span id="ComputerScore"></span>
+        <span id="ComputerName" class="PlayerNames">Computer</span>
+    </div>
+    <div id="arena">
+        <div id="roundcontent">        
+            <span class="animate-flicker" id="round"></span>
+        </div> 
+        <div id="selectioncontent">
+            <p class="choice">Make your choice...</p>
+            <p class="choice">Player</p>
+            <button type="button" id="rock-selection" class="choice"> Rock</button>
+            <button type="button" id="paper-selection" class="choice"> Paper</button>
+            <button type="button" id="scissor-selection" class="choice"> Scissor</button>
+            <p class="choice">Computer</p>
+            <button type="button" id="comp-rock-selection" class="comp-choice" disabled> Rock</button>
+            <button type="button" id="comp-paper-selection" class="comp-choice" disabled> Paper</button>
+            <button type="button" id="comp-scissor-selection" class="comp-choice" disabled> Scissor</button>
+        </div>  
+        <div>
+            <p  id="result" class="result"></p>
+        </div>
+        <div id="game-ends-content" class="end-result">
+            <p>
+                <button type="button" id="play-again-button" class="end-result">Play again!</button> 
+           </p>
+        </div> 
+    </div>
 </body>
 <script src="script.js">
 
